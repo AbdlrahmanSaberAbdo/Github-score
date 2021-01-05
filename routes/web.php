@@ -16,4 +16,4 @@ use App\Http\Controllers\GithubUserController;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/github/{username}', [GithubUserController::class, 'getUsers']);
+Route::get('/github/{username}', [GithubUserController::class, 'getUserScore']);
